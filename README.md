@@ -6,5 +6,12 @@ A patched up version of terraform is build in this docker to support _iam_instan
 
 AWS Tools, i.e. awscli and s3cmd are also installed.
 
+##Usage
+```
+docker run -it -v $HOME/.aws:/root/.aws -v $HOME/projects/tf:/tf xuwang/terraform
+$ terraform <cmd>
+...
+$ exit
+```
 
 
